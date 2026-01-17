@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #EAEAEA ;
+  font-family: Montserrat, sans-serif;
+}
+
+
+/* Адаптив */
+.max-container {
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+
+@media (min-width: 768px) and (max-width: 1109px) {
+  .max-container {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .max-container {
+    padding: 1rem 1rem;
+  }
+} 
