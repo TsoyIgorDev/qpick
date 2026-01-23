@@ -5,7 +5,7 @@ const Page = () => {
     return (
         <section className='max-container w-full mt-[28px] min-h-[calc(100vh-216px)]'>
             <h2 className='text-[#838383] font-semibold text-[20px] mb-[20px]'>Наушники</h2>
-            <div className='grid max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 grid-cols-3 gap-7'>
+            <div className='grid max-lg:grid-cols-3 max-lg:gap-3 max-md:grid-cols-3 max-md:gap-2 max-sm:grid-cols-2 max-sm:gap-1 grid-cols-3 gap-7'>
                 {headphones.map((headphone) => (
                     <Card key={headphone.id} id={headphone.id} imgURL={headphone.imgURL} title={headphone.title} price={headphone.price} rate={headphone.rate} oldprice={headphone.oldprice} />
                 ))}
@@ -14,7 +14,7 @@ const Page = () => {
                 ))}
             </div>
             <h2 className='text-[#838383] font-semibold text-[20px] mb-[20px] mt-[28px]'>Беспроводные наушники</h2>
-            <div className='grid max-lg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 grid-cols-3 gap-7 mb-[20px]'>
+            <div className='grid max-lg:grid-cols-3 max-lg:gap-3 max-md:grid-cols-3 max-md:gap-2 max-sm:grid-cols-2 max-sm:gap-1 grid-cols-3 gap-7 mb-[20px]'>
                 {wirelessHeadphones.map((headphone) => (
                     <Card key={headphone.id} id={headphone.id} imgURL={headphone.imgURL} title={headphone.title} price={headphone.price} rate={headphone.rate} />
                 ))}
