@@ -1,16 +1,91 @@
-# React + Vite
+# QPICK
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Описание:**  
+Тестовое задание для обучающего центра Neoflex, реализованное с использованием Tailwind CSS и современных веб-технологий.
 
-Currently, two official plugins are available:
+---
+## Скриншоты приложения
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<div align="center">
 
-## React Compiler
+### Десктопная версия
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 20px 0;">
+  <img src="./public/screenshots/desktop1.png" alt="Главная страница" style="width: 70%; border-radius: 8px;">
+  <img src="./public/screenshots/desktop2.png" alt="Корзина" style="width: 70%; border-radius: 8px;">
+  <img src="./public/screenshots/desktop3.png" alt="Модальное окно" style="width: 70%; border-radius: 8px;">
+</div>
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Возможности
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Работа с карточками товара** - Возможность добавления, удаления, редактирование количество товара.
+- **Хранение данных** - Хранение данных session storage
+- **Полная адаптивность** - Оптимизирован для всех устройств
+- **Высокая производительность** - Быстрая загрузка и плавные анимации
+
+---
+
+## Установка и запуск
+
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/TsoyIgorDev/qpick.git
+   ```
+
+2. Перейдите в папку проекта:
+   ```bash
+   cd qpick
+   ```
+
+3. Установите зависимости:
+   ```bash
+   npm install
+   ```
+
+4. Запустите проект в режиме разработки:
+   ```bash
+   npm run dev
+   ```
+
+5. Для сборки продакшн версии:
+   ```bash
+   npm run build
+   ```
+
+Приложение будет доступно по адресу: `http://localhost:5173`
+
+---
+
+## Технологии
+
+- **Vite** - Современный сборщик проектов
+- **React** - Библиотека для построения пользовательских интерфейсов
+- **Tailwind CSS** - Утилитарный CSS-фреймворк
+- **Ant Design** - Библиотека с компонентами для React
+
+---
+
+## Структура проекта
+
+```
+nike-tailwind/
+├── public/
+│   ├── screenshots/    # Скриншоты для документации
+│   └── ...             # Статические файлы
+├── src/
+│   ├── components/     # React компоненты
+│   ├── assets/         # Изображения
+│   ├── constants/      # Константы
+│   ├── sections/       # Секции лендинга
+│   ├── hooks/          # Кастомные хуки
+│   ├── context/        # Контексты
+│   └── ...             # Исходный код
+├── index.html          # Главный HTML файл
+├── tailwind.config.js  # Конфигурация Tailwind
+├── vite.config.js      # Конфигурация Vite
+└── package.json        # Зависимости проекта
+```
+
+---
